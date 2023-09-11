@@ -99,6 +99,14 @@ Reload Apache so thes changes can take effect:
 
 ![Alt text](<Images/Creating a virtual host for my website using apache.png>)
 
+The website is now active, but the web root **/var/www/projectlamp/** is still empty is still empty.Create an index.html file in the locate so that we can test that the virtual host works as expected:
+`sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
+
+Now go to your browser and try to open your website **URL** USING IP address:
+`http://<public-IP-Address>:80`
+
+![Alt text](<Images/Creating virtual host.png>)
+
 ## STEP5-ENABLE PHP ON THE WEBSITE
 
 With the default **Directory Index** settings on Apache, a file named `index.html` will always take precedence overan `index.php` file.
