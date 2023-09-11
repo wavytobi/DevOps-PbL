@@ -124,7 +124,48 @@ phpinfo();`
 
 When you are finished, save and close the file, refresh the page and you will see a page similar to this:
 
-![Alt text](Images/Php.png)
+![Alt text](Images/Php.png
 
 
+## SELFSTUDY
 
+1. Google searched about **SDLC**
+ 
+- What is SDLC
+- why is SDLC important
+- Benefits of SDLC
+- How it works
+- Types of SDLC Model
+- Comparasions between other lifecycle methodologies
+
+![Alt text](<Images/Learning LAMP.png>)
+
+2. Google searched **LAMP** stack
+
+- L- linux is an open source operating system,and can be configured to meet different application requirement.
+
+- A- Apache is the second layer of the lamp stack, the apache serves as a web server, stores webfiles and exchange information with a browser using an HTTP an internet protocol for transferring web information in plain text.
+
+- M- MYSQL is a relational management system, which is also a third layer of the LAMP stack, MySQL is used for storing managing and quering informationin relational database.
+
+- P- PHP Hypertext processor are used for or as scripting languages,used for dynamic web pages.
+
+![Alt text](<Images/Learning LAMP.png>)
+
+3. Chown and Chmod 
+
+- Chown: is a command to change owner and group in linux 
+
+- Chmod: is a command used to changed permission for files and folders
+
+![Alt text](<Images/learning Chown.png>)
+
+![Alt text](<Images/Learning chmod.png>)
+
+**Practiced chown and chmod on my linux terminal**
+
+![Alt text](Images/chown.png)
+
+![Alt text](<Images/chmod g+rw filename3.txt.png>)
+
+![Alt text](<Images/Chmod a-rwx.png>)
