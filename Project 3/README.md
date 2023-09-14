@@ -137,6 +137,7 @@ When you are finished, save and close the file, refresh the page and you will se
 
 ## SELFSTUDY
 
+
 1. Google searched about **SDLC**
  
 - What is SDLC
@@ -147,6 +148,7 @@ When you are finished, save and close the file, refresh the page and you will se
 - Comparasions between other lifecycle methodologies
 
 ![Alt text](<Images/Learning LAMP.png>)
+
 
 2. Google searched **LAMP** stack
 
@@ -159,6 +161,7 @@ When you are finished, save and close the file, refresh the page and you will se
 - P- PHP Hypertext processor are used for or as scripting languages,used for dynamic web pages.
 
 ![Alt text](<Images/Learning LAMP.png>)
+
 
 3. Chown and Chmod 
 
@@ -177,3 +180,31 @@ When you are finished, save and close the file, refresh the page and you will se
 ![Alt text](<Images/chmod g+rw filename3.txt.png>)
 
 ![Alt text](<Images/Chmod a-rwx.png>)
+
+
+4. TCP & UDP
+
+- TCP- Transmission Control Protocol
+
+- UDP- User Datagram Protocol
+
+- **TCP**: 
+ - Are connection oriented,they require sequence,error checking with packet for retransmission.
+ - They are reliable
+ - Guaranteed delivery
+ - 3 way handshake to establish connection.(SYN-SYN-ACK-ACK)
+ - One to one connection.
+ - Includes HTTP(web),FTP(files),SMTP(mails),TELNET(connecting to specific a device overthe network)
+
+- **UDP**:
+ - Connection(less),No sequences,No error recovery
+ - They are fast
+ - No delivery guarantee
+ - No handshake required
+ - Muticast and Broadcast
+ - Includes DNS,VOIP,DHCP
+ 
+
+5. Learning how to use **vim** editor
+
+![Alt text](<Images/Vim editor.png>)
