@@ -24,7 +24,7 @@ see the the response from the remote server in the below output.
 
 3. On `mysql client` linux server instal MYSQL client software.
 
-4. MySql uses TCP 3306 by default, so i add to edit the inbound rules in 'mysql server' security groups.
+4. MySql uses TCP 3306 by default, so I had to edit the inbound rules in 'mysql server' security groups.
 
 ![Alt text](<Images/MySQL port 3306.png>)
 
