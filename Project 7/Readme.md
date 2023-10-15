@@ -24,13 +24,13 @@
 3. Step 3: Its time to install Apache webserver, but before that I need to connect to the webserver 
    `sudo apt update -y &&  sudo apt install apache2 -y`
 
-Verify that apache is running by using the command;
-`sudo systemctl status apache2`
+  Verify that apache is running by using the command;
+  `sudo systemctl status apache2`
 
 4. step 4: Configure Apache to serve a page showing its public IP:
 
-I will start by configuring Apache webserver to serve content on `port 8000` instead of its default which is `port 80`.
-then i will create a new `index.html`
+   I will start by configuring Apache webserver to serve content on `port 8000` instead of its default which is `port 80`.
+   then i will create a new `index.html`
 
 - **Configuring Apache to serve content on port 8000:**
    
@@ -40,9 +40,9 @@ then i will create a new `index.html`
 
    3. Next opened the file /etc/apache2/sites-available/0000-default.conf and change the port 80 on the virtual host to 8000.
 
-![Alt text](<Images/Apache webser  port 8000 conf1.png>)
+   ![Alt text](<Images/Apache webser  port 8000 conf1.png>)
 
-![Alt text](<Images/Apache webserver  virtual host port 8000 .png>)
+   ![Alt text](<Images/Apache webserver  virtual host port 8000 .png>)
 
    4. Restart Apache to load the new configuration with the command;
      `sudo systemctl restart apache2`
@@ -65,15 +65,15 @@ then i will create a new `index.html`
         </html>
 
   3. Change file ownership of the index.html file withe the command;
-   `sudo chown www-data:www-data ./index.html`
+     `sudo chown www-data:www-data ./index.html`
 
 - **Overriding the Default html file of Apache Webserver;**
 
   1. I replaced the default html file with our new html using the command
-   `sudo cp -f ./index.html /var/www/html/index.html`
+     `sudo cp -f ./index.html /var/www/html/index.html`
 
   2. Restart the webserver to load the new configuration using the commmand
-   `sudo systemctl restart apache2`
+     `sudo systemctl restart apache2`
 
   3. A page like this should be displayed.
 
