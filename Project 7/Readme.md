@@ -77,12 +77,62 @@
 
   3. A page like this should be displayed.
 
-![Alt text](<Images/Apache webserver Ec2 instances.png>)
+   ![Alt text](<Images/Apache webserver Ec2 instances.png>)
 
 
+## Configuring Nginx as a load balancer
 
+- Using an Ec2 Instance Ubuntu
 
+- connected to the instance using ssh.
 
+- I installed Nginx into the instance using 
+  `sudo apt update -y && sudo apt install nginx -y`
+
+- Verified that Nginx was installed by using the command
+  `sudo systemctl status nginx`
+
+- Used this command to check if its active and running
+  `sudo systemctl status nginx`
+
+- Opened the nginx config file
+  `sudo vi /etc/nginx/conf.d/loadbalancer.conf`
+
+- pasted the configuration file to allow nginx act as a load balancer,edited the public address for both the Apache webserver and the supposed nginx load balancer.
+
+          
+        upstream backend_servers {
+
+            # your are to replace the public IP and Port to that of your webservers
+            server 127.0.0.1:8000; # public IP and port for webserser 1
+            server 127.0.0.1:8000; # public IP and port for webserver 2
+
+        }
+
+        server {
+            listen 80;
+            server_name <your load balancer's public IP addres>; # provide your load balancers public IP address
+
+            location / {
+                proxy_pass http://backend_servers;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            }
+        }
+    
+
+- Tested my configuration 
+  `sudo nginx -t`
+
+- Restarted my nginx to load the new configuration, since there was no error when i tested.
+  `sudo systemctl restart nginx`
+
+- Copied the Load balancer Public Ip address on AWS, saw the same page displayed by the webserver.
+  ![Alt text](<Images/Nginx load balancer.png>)
+  
+
+  
 
 
 
