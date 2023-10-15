@@ -77,7 +77,7 @@
 
   3. A page like this should be displayed.
 
-   ![Alt text](<Images/Apache webserver Ec2 instances.png>)
+   ![Alt text](<Images/Apache webserver corrected.png>)
 
 
 ## Configuring Nginx as a load balancer
@@ -129,7 +129,7 @@
   `sudo systemctl restart nginx`
 
 - Copied the Load balancer Public Ip address on AWS, saw the same page displayed by the webserver.
-  ![Alt text](<Images/Nginx load balancer.png>)
+ ![Alt text](<Images/Loadbalancer image corrected.png>)
   
 
   
