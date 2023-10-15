@@ -2,14 +2,14 @@
 
  ## Introduction to load Balancing and Nginx.
 
- **Load balancing** means distributing the work or tasks amongst several computers or servers so that not one computer gets overloaded with too musch task. It keeps the operation runnning smoothly and ensures that websites and apps work quickly and dont get too slow. It's like teamwork for the computers.
+ **Load balancing** means distributing the work or tasks amongst several computers or servers so that not one computer gets overloaded with too much task. It keeps the operation running smoothly and ensures that websites and apps work quickly and don't get too slow. It's like teamwork for the computers.
 
  **Nginx** is a versatile software, it can serve as a web server, reverse proxy, load balancer.
 
 
  ## Setting Up a Basic Load Balancer
 
- We are going to be provisioning two Ec2 instances runnung on ubuntu, and install Apache and Nginx in them, we will open port 8000 to allow traffic from anywhere,finally update the default page of the webserver  to display their public IP address. 
+ We are going to be provisioning two Ec2 instances running on ubuntu, and install Apache and Nginx in them, we will open port 8000 to allow traffic from anywhere,finally update the default page of the webserver  to display their public IP address. 
 
  Next I will provision another EC2 Instance still on ubuntu, this time I will install Nginx and configure it to act as a load balancer disturbing traffic across the webservers. 
 
