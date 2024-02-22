@@ -173,6 +173,7 @@ Now, it is time to execute ansible-playbook command and verify if your playbook 
 
 ![alt text](<Images/Ansible test.png>)
 
-![alt text](Images/220228156-2d17da01-31f0-42f9-8b42-5286a347f6e0.png)
+Your updated with Ansible architecture now looks like this:
 
+![alt text](Images/220228156-2d17da01-31f0-42f9-8b42-5286a347f6e0.png)
 
